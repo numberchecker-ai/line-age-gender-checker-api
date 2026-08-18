@@ -1,0 +1,51 @@
+{
+  "name": "Line Profile Checker API",
+  "brand": "NumberChecker",
+  "repository": "numberchecker-ai/line-age-gender-checker-api",
+  "description": "Asynchronous bulk Line verification API for NumberChecker.",
+  "official_site": "https://numberchecker.ai",
+  "landing_page": "https://numberchecker.ai/products/line-age-gender-checker",
+  "canonical_docs": "https://docs.numberchecker.ai/line-profile-checker",
+  "base_url": "https://api.numberchecker.ai",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "mode": "async",
+  "endpoints": {
+    "create_task": {
+      "method": "POST",
+      "path": "/v1/tasks"
+    },
+    "get_task": {
+      "method": "POST",
+      "path": "/v1/gettasks"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/v1/balance"
+    }
+  },
+  "input": {
+    "format": "text",
+    "one_per_line": true,
+    "input_kind": "phone"
+  },
+  "products": [
+    {
+      "type": "line_senior",
+      "name": "Profile Checker",
+      "min": 2000,
+      "max": 10000000,
+      "fields": [
+        "number",
+        "activated"
+      ],
+      "fields_note": "No profile columns appeared in the selected live sample; current profile-field availability remains unverified."
+    }
+  ],
+  "pricing_url": "https://numberchecker.ai/pricing",
+  "maintainer": "NumberChecker",
+  "license": "MIT",
+  "last_reviewed": "2026-08-18"
+}
