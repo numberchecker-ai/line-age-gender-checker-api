@@ -35,17 +35,27 @@
     {
       "type": "line_senior",
       "name": "Profile Checker",
-      "min": 2000,
+      "min": 1,
       "max": 10000000,
       "fields": [
         "number",
-        "activated"
+        "activated",
+        "uid",
+        "nickname",
+        "gender",
+        "age",
+        "skin_color",
+        "hair_color",
+        "category",
+        "avatar"
       ],
-      "fields_note": "No profile columns appeared in the selected live sample; current profile-field availability remains unverified."
+      "fields_note": "CSV header read from the current signed-in sample endpoint on 2026-10-30; preserve exact order and duplicate names.",
+      "min_billable_numbers": 2000,
+      "available": true
     }
   ],
   "pricing_url": "https://numberchecker.ai/pricing",
   "maintainer": "NumberChecker",
   "license": "MIT",
-  "last_reviewed": "2026-08-18"
+  "last_reviewed": "2026-10-30"
 }
